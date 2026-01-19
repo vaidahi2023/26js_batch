@@ -1,0 +1,18 @@
+types of events
+
+mouse events
+
+click 
+dbclick
+mouseout 
+mouseover 
+mousemove
+mouseup 
+mousedown 
+
+
+keyboard events
+
+keydown 
+keyup
+keypress
