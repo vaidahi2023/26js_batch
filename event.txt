@@ -9,6 +9,8 @@ mouseover
 mousemove
 mouseup 
 mousedown 
+mouseenter
+mouseleave
 
 
 keyboard events
