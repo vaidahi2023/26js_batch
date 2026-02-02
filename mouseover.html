@@ -7,22 +7,25 @@
     <style>
         #box 
         {
-            height: 200px;
-            width:200px;
+            height: 300px;
+            width:300px;
             background-color: aqua;
-            border:2px solid black;
         }
     </style>
 </head>
 <body>
-    <div id="box" onmouseleave="mouseleave()" ></div>
+    
+    <div id="box" onmouseover="mouseover()">
 
+    </div>
     <script>
         const box=document.getElementById('box')
-        function mouseleave()
+        function mouseover()
         {
-            alert("mouse is leaved the element")
+            alert("mouse is over the box")
+            box.style.backgroundColor='green'
         }
     </script>
+
 </body>
 </html>

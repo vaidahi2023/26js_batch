@@ -15,13 +15,16 @@
     </style>
 </head>
 <body>
-    <div id="box" onmouseleave="mouseleave()" ></div>
-
+    <div id="box" >
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Placeat aut dolor quas aliquid. Quae sequi corporis commodi libero perspiciatis soluta, voluptatum minus fugit magnam, deleniti accusamus nam sapiente exercitationem beatae.</p>
+    </div>
+    <input type="text" onkeypress="keypress()">
     <script>
         const box=document.getElementById('box')
-        function mouseleave()
+        function keypress()
         {
-            alert("mouse is leaved the element")
+            box.style.backgroundColor='red'
         }
     </script>
 </body>
