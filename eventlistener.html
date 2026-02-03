@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box 
+        {
+            height: 200px;
+            width:200px;
+            background-color: aqua;
+        }
+        #box1 
+        {
+            height: 200px;
+            width:200px;
+            background-color:green;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+    </div>
+    <div id="box1"></div>
+    <script>
+        const box =document.getElementById('box')
+        const box1 =document.getElementById('box1')
+
+        box.addEventListener('click',()=>{
+
+            alert("box is click")
+            box.style.backgroundColor="yellow"
+        })
+
+        box1.addEventListener('dblclick',()=>{
+
+            alert("box is  double click")
+            box1.style.backgroundColor="violet"
+        })
+    </script>
+</body>
+</html>
