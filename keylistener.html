@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" id="key">
+
+
+</body>
+<script>
+    const key =document.getElementById('key')
+    const b =document.getElementsByTagName("body")[0]
+    key.addEventListener('keypress',()=>
+        {
+            alert("key is pressed")
+            b.style.backgroundColor="red"
+        })
+</script>
+</html>
