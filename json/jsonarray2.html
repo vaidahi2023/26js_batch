@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var students = [
+        {
+          id: 1,
+          name: "kunal",
+          age: 23,
+          gender: "male",
+          courses: ["c", "c++"],
+        },
+        {
+          id: 2,
+          name: "ram",
+          age: 25,
+          gender: "male",
+          courses: ["c", "c++", "java"],
+        },
+        {
+          id: 3,
+          name: "sita",
+          age: 22,
+          gender: "female",
+          courses: ["c", "c++", "python"],
+        },
+        {
+          id: 4,
+          name: "seema",
+          age: 28,
+          gender: "female",
+          courses: ["c", "c++", "java", "python"],
+        },
+      ];
+
+      var femalestu=students.filter((stu)=>{
+
+            return stu.gender=="female"
+      })
+      console.log(femalestu)
+
+      var agestu=students.filter((stu)=>{
+        return stu.age>23
+      })
+      console.log(agestu);
+      console.log(agestu.length);
+      console.log(agestu)
+      agestu.forEach(element => {
+        
+        console.log(element)
+      });
+
+      //create the function that return python 
+    </script>
+  </body>
+</html>
