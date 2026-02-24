@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var companies =[
+        {
+        name: "Google",
+        CEO: "Sundar Pichai",
+        employees:[
+            {
+                id:1,
+                firstName:"John",
+                lastName:"lee",
+                salary:30000,
+                gender:"female",
+                colors:["red","black","blue"]
+            },
+            {
+                id:2,
+                firstName:"ram",
+                lastName:"patel",
+                salary:40000,
+                gender:"male",
+                colors:["red","black"]
+            }
+        ]
+    },
+    {
+        name: "Microsoft",
+        CEO: "Satya Nadella",
+        employees:[
+            {
+                id:1,
+                firstName:"Bill",
+                lastName:"Gates",
+                salary:30000,
+                gender:"female",
+                colors:["red","black","pink"]
+            },
+            {
+                id:2,
+                firstName:"Steve",
+                lastName:"Ballmer",
+                salary:40000,
+                gender:"female",
+                colors:["red","white","blue"]
+            }
+        ]
+    },
+    {
+        name: "Facebook",
+        CEO: "Mark Zuckerberg",
+        employees:[
+            {
+                id:1,
+                firstName:"Mark",
+                lastName:"Zuckerberg",
+                salary:30000,
+                gender:"male"
+
+            },
+            {
+                id:2,
+                firstName:"Sheryl",
+                lastName:"Sandberg",
+                salary:40000,
+                gender:"female"
+
+            }
+        ]
+    }
+]
+
+var Google=companies.find((company)=>company.name=="Google").employees.filter((emp)=>emp.salary>30000)
+console.log(Google)
+
+var Facebook=companies.find((company)=>company.name=="Facebook").employees.filter((emp)=>emp.gender=="female")
+console.log(Facebook)
+
+//find the employee who have white color
+//find the employee who have red,blue color
+    </script>
+</body>
+</html>
