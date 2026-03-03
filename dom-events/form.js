@@ -12,5 +12,10 @@ const submitHandler=(event)=>{
     console.log(color.value)
 
     var nameoutput=document.getElementById("nameo")
-    
+    nameoutput.innerHTML=name.value
+    nameoutput.style.backgroundColor=color.value
+
+    var ageoutput= document.getElementById("ageo")
+    ageoutput.style.backgroundColor=color.value
+    ageoutput.innerHTML=age.value
 }

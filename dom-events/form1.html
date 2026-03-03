@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="form1.js"></script>
+</head>
+<body>
+    
+     <form onsubmit="submitHandler(event)">
+        <table>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" id="name" placeholder="Enter your name"></td>
+                <td><span id="nameerror"></span></td>
+            </tr>
+            <tr>
+                <td>Age</td>
+                <td><input type="text" id="age" placeholder="Enter your age"></td>
+                <td><span id="ageerror"></span></td>
+
+            </tr>
+            <tr>
+                <td>choose color</td>
+                <td><input type="color" id="color"></td>
+            </tr>
+            <tr>
+                <td><input type="submit"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
