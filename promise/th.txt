@@ -1,0 +1,8 @@
+Synchronous	      Asynchronous
+Line by line	  Non-blocking
+Slower for heavy 
+tasks	          Faster & efficient
+Simple operations API calls, timers, I/O
+Waits	          Continues execution
+
+promise is class
