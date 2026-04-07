@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    async function fun() {
+        return "hello"
+    }
+    fun().then(console.log)
+
+    async function getdata() {
+        let reponse=await fetch("https://api.example.com/data")
+        let data=await reponse.json()
+        console.log(data)
+    }
+    getdata()
+</script>
+</html>

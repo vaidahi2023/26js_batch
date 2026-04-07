@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    var users = [
+        {
+            id: 1,
+            name: "riya",
+            age: 25
+        },
+        {
+            id: 2,
+            name: "diya",
+            age: 25
+        },
+        {
+            id: 3,
+            name: "priya",
+            age: 25
+        }
+    ]
+    const fetchusers = () => {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve(users)
+            },2000)
+        })
+    }
+
+
+    // console.log("start")
+    // fetchusers().then((users)=>{
+    //     console.log(users)
+    // }).catch((err)=>{
+    //     console.log(err)
+    // })
+    // console.log("End")
+
+
+    async function printusers() {
+        
+        console.log("start")
+        const users=await fetchusers();
+        console.log(users)
+        console.log("end")
+    } 
+    printusers()
+</script>
+
+</html>
